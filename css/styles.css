@@ -15,6 +15,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+.conteiner {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 a.p, p {
     color: var(--secondary-text-color);
 }
@@ -24,8 +32,24 @@ a {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+} 
 
 /* Page-header Portfolio */
 header {
@@ -36,7 +60,7 @@ span.logo-link {
     color: var(--accent-color);
 }
 
-a.logo.header {
+.logo.header {
     color: #000;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -44,7 +68,7 @@ a.logo.header {
     line-height: 1.19;  
 }
 
-a.nav-link {
+.nav-link {
     color: var(--primary-color);
     font-weight: 500;
     font-size: 14px;
@@ -52,16 +76,16 @@ a.nav-link {
     letter-spacing: 0.02em;
 }
 
-a.nav-link:hover,
-a.nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--accent-color);
 }
 
-a.nav-link.current {
+.nav-link.current {
     color: var(--accent-color);
 }
 
-a.kontakts {
+.kontakts {
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -70,28 +94,23 @@ a.kontakts {
 
 }
 
-a.kontakts:hover,
-a.kontakts:focus {
-    color: var(--accent-color);
-}
-
-a.kontakts.active {
-    color: var(--accent-color);
-}
-
-a.kontakts-list:hover,
-a.kontakts-list:focus {
+.kontakts:hover,
+.kontakts:focus {
     color: var(--accent-color);
 }
 
 /* Мєйн index.html*/
 .hero {
+    margin-bottom: 94px;
+    text-align: center;
     color: var(--primary-white-color);
     background-color: var(--background-color);
 }
 
 /* Hero */
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -99,13 +118,22 @@ a.kontakts-list:focus {
     letter-spacing: 0.06em;
 }
 
-button.button.primary.hero:hover,
-button.button.primary.hero:focus {
+.hero-title, .features-title {
+    text-transform: uppercase;
+}
+
+.button-hero {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button-hero:hover,
+.button-hero:focus {
     color: var(--primary-white-color);
     background-color: #188ce8;
 }
 
-button.button.primary.hero {
+.button-hero {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -121,13 +149,13 @@ button {
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    font-family: inherit;
 
 }
 
 button.primary {
-    background-color: var(--accent-color);
     color: var(--primary-white-color);
-    font-family: inherit;
+    background-color: var(--accent-color);
 }
 
 button:hover,
@@ -137,24 +165,46 @@ button:focus {
 }
 
 /* Features */
+.features {
+    margin-bottom: 94px;
+}
+
 .features-title {
+    margin-top: 0;
+    margin-bottom: 10;
     font-size: 14px;
     line-height: 1.14;
 }
 
 .features-item {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71; 
 }
 
+/* Activity */
+.activity {
+    margin-bottom: 94px;
+}
+
 .activity-title {
+    margin-top: 0;
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
 
 /* Team */
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--secondery-background-color);
+}
 .team-title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -174,8 +224,8 @@ button:focus {
 
 
 /* portfolio */
-a.portfolio-link:hover,
-a.portfolio-link:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
     background-color: #EEEEEE;
 }
 
@@ -196,15 +246,15 @@ a.portfolio-link:focus {
 }
 
 /* Футер */
-footer {
+.footer {
     background-color: var(--background-color);
 }
 
-address {
+.address {
     font-style: normal;
 }
 
-a.logo.footer {
+.logo.footer {
     color: var(--primary-white-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -213,13 +263,20 @@ a.logo.footer {
 }
 
 .location {
+    color: var(--primary-white-color);
     font-size: 14px;
     line-height: 1.71;
 } 
 
 .kontakts-list.footer {
+    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
 }
+
+.kontakts-list.footer:hover,
+.kontakts-list.footer:focus {
+    color: var(--accent-color);
+}
+
 
