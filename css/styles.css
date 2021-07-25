@@ -51,7 +51,7 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 } 
 
-/* Page-header Portfolio */
+/* Heder */
 header {
     background-color: var(--primary-white-color);
     }
@@ -61,6 +61,8 @@ span.logo-link {
 }
 
 .logo.header {
+    margin-top: 24px;
+    margin-bottom: 25px;
     color: #000;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -68,7 +70,27 @@ span.logo-link {
     line-height: 1.19;  
 }
 
+/* Nav */
+.conteiner.nav {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    display:flex;
+}
+.nav.list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav.list .list + .list {
+    margin-left: 50px;
+}
+
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-color);
     font-weight: 500;
     font-size: 14px;
@@ -85,6 +107,14 @@ span.logo-link {
     color: var(--accent-color);
 }
 
+.kontakts.list {
+    display: flex;
+    margin-left: auto;
+}
+
+.kontakts.list .list + .list {
+    margin-left: 50px;
+}
 .kontakts {
     color: var(--secondary-text-color);
     font-weight: 500;
@@ -100,21 +130,22 @@ span.logo-link {
 }
 
 /* Мєйн index.html*/
+
+/* Hero */
 .hero {
-    margin-bottom: 94px;
+    padding: 200px 452px;
+    margin: 0 auto 94px auto;
     text-align: center;
     color: var(--primary-white-color);
     background-color: var(--background-color);
 }
 
-/* Hero */
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 30;
+    margin: 0 auto 30px auto;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
 }
 
@@ -123,21 +154,24 @@ span.logo-link {
 }
 
 .button-hero {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
 .button-hero:hover,
 .button-hero:focus {
     color: var(--primary-white-color);
     background-color: #188ce8;
-}
-
-.button-hero {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
 }
 
 /* Button */
@@ -165,13 +199,22 @@ button:focus {
 }
 
 /* Features */
+.feature.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature.list .list {
+    width: 270px;
+    background-color: tomato;
+}
 .features {
     margin-bottom: 94px;
 }
 
 .features-title {
     margin-top: 0;
-    margin-bottom: 10;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
 }
@@ -204,7 +247,7 @@ button:focus {
 }
 .team-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
