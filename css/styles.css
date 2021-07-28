@@ -133,6 +133,7 @@ span.logo-link {
     margin-left: 50px;
 }
 .kontakts {
+    display: block;
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -368,7 +369,6 @@ button:focus {
 }
 
 .card-content {
-    width: 370px;
     padding: 20px 24px;
     border-right: 1px solid var(--bg-color);
     border-bottom: 1px solid var(--bg-color);
@@ -429,6 +429,7 @@ footer {
 }
 
 .footer-list .list {
+    display: block;
     margin-bottom: 9px;
 }
 
