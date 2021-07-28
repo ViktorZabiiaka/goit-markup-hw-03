@@ -87,11 +87,6 @@ span.logo-link {
     line-height: 1.19;  
 }
 
-.kontakts {
-    padding-top: 32px;
-    padding-bottom: 23px;
-}
-
 /* Nav */
 .conteiner.nav {
     display: flex;
@@ -332,7 +327,7 @@ button:focus {
 }
 
 .list-title {
-    margin-top: 30;
+    margin-top: 0;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -340,10 +335,14 @@ button:focus {
 }
 
 .list-text {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0;
     font-size: 16px;
     line-height: 1.19;
+}
+
+.team-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* portfolio */
@@ -391,9 +390,6 @@ button:focus {
     line-height: 1.88;
 }
 
-.team {
-    background-color: var(--secondery-background-color);
-}
 
 /* Футер */
 .footer {
